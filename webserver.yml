@@ -1,10 +1,10 @@
 ---
-  hosts: all
-  become: yes
-  tasks:
-  - name: i want to install webserver on ubuntu18
-    apt:
-      name: apache2
-      state: present
-  - name: i want to start my webserver services
-    state: started
+   hosts: all
+   become: yes
+   tasks:
+   - name: i want to install webserver on ubuntu18
+     apt:
+       name: apache2
+       state: present
+   - name: i want to start my webserver services
+     state: started
